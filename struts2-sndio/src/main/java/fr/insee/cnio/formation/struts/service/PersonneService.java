@@ -19,13 +19,13 @@ public class PersonneService {
 	private List<Personne> listePersonnes = new ArrayList<>();
 	
 	public PersonneService() {
-		listePersonnes.add(new Personne("Julien Ca.", "H", 19));
-		listePersonnes.add(new Personne("Julien Co.", "H", 20));
-		listePersonnes.add(new Personne("Minh", "H", 22));
-		listePersonnes.add(new Personne("Pierre", "H", 23));
-		listePersonnes.add(new Personne("Daniel", "H", 24));
-		listePersonnes.add(new Personne("Christophe", "H", 25));
-		listePersonnes.add(new Personne("Brigitte", "F", 26));
+		listePersonnes.add(new Personne("Anthony", "H", 19));
+		listePersonnes.add(new Personne("David L.", "H", 20));
+		listePersonnes.add(new Personne("David O.", "H", 22));
+		listePersonnes.add(new Personne("Farida", "F", 23));
+		listePersonnes.add(new Personne("Sébastien", "H", 24));
+		listePersonnes.add(new Personne("Valérie", "F", 25));
+		listePersonnes.add(new Personne("Minh", "H", 26));
 	}
 
 	/**
