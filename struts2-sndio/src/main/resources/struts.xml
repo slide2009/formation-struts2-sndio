@@ -7,7 +7,7 @@
 	<package name="default" extends="struts-default" namespace="/">
 		
 		<action name="index" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="afficher">
-			<result name="success" type="dispatcher">/WEB-INF/jsp/date.jsp</result>
+			<result name="success" type="dispatcher">/WEB-INF/jsp/comptage.jsp</result>
 		</action>
 		
 	</package>

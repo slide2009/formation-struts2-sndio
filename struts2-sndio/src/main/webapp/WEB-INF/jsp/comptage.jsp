@@ -4,12 +4,12 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>Formation Struts 2 CNIO</title>
+	<title>Formation Struts 2</title>
 </head>
 
 <body>
 	<div>
-		Aujourd'hui : <s:property value="date"/>
+		Le nombre de personnes : <s:property value="nombrePersonnes"/>
 	</div>
 </body>
 </html>
