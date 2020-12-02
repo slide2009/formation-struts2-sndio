@@ -20,12 +20,12 @@ public class PersonneService {
 	
 	public PersonneService() {
 		listePersonnes.add(new Personne("Anthony", "H", 19));
-		listePersonnes.add(new Personne("David L.", "H", 20));
-		listePersonnes.add(new Personne("David O.", "H", 22));
-		listePersonnes.add(new Personne("Farida", "F", 23));
+		listePersonnes.add(new Personne("David L", "H", 20));
+		listePersonnes.add(new Personne("David O", "H", 21));
+		listePersonnes.add(new Personne("Farida", "F", 22));
+		listePersonnes.add(new Personne("Minh", "H", 23));
 		listePersonnes.add(new Personne("Sébastien", "H", 24));
 		listePersonnes.add(new Personne("Valérie", "F", 25));
-		listePersonnes.add(new Personne("Minh", "H", 26));
 	}
 
 	/**

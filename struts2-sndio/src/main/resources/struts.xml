@@ -5,9 +5,16 @@
 <struts>
 
 	<package name="default" extends="struts-default" namespace="/">
+		<action name="saisie">
+			<result>/WEB-INF/jsp/saisie.jsp</result>
+		</action>
 		
-		<action name="index" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="afficher">
-			<result name="success" type="dispatcher">/WEB-INF/jsp/date.jsp</result>
+		<action name="enregistrer" class="fr.insee.cnio.formation.struts.action.IteratorAction" method="enregistrer">
+			<result>/WEB-INF/jsp/resultat.jsp</result>
+		</action>
+		
+		<action name="listeAgees" class="fr.insee.cnio.formation.struts.action.IteratorAction" method="listeAgees">
+			<result>/WEB-INF/jsp/listeAgees.jsp</result>
 		</action>
 		
 	</package>
