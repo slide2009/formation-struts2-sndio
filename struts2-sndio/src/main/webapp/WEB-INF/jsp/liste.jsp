@@ -4,12 +4,17 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>Formation Struts 2 CNIO</title>
+	<title>Formation Struts 2</title>
 </head>
 
 <body>
+	<s:form action="enregistrer">
 	<div>
-		Aujourd'hui : <s:property value="date"/>
+		<s:checkboxlist list="listeNoms" name="nomsChoisis"></s:checkboxlist>
 	</div>
+	<div>
+		<s:submit value="Enregistrer"></s:submit>
+	</div>
+	</s:form>
 </body>
 </html>
