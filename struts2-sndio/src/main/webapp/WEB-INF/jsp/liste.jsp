@@ -8,8 +8,15 @@
 </head>
 
 <body>
+	<s:form action="valider">
 	<div>
-		Aujourd'hui : <s:property value="date"/>
+		<s:select list="listePersonnes" listKey="nom" listValue="nom + ' - ' + sexe" label="Personne" name="nom"></s:select>
 	</div>
+	<div>
+		<s:textfield name="age" value="21" label="Age limite"></s:textfield>
+	</div>
+		
+	<s:submit value="Voir"></s:submit>
+	</s:form>
 </body>
 </html>
