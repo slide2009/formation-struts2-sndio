@@ -6,9 +6,12 @@
 
 	<package name="default" extends="struts-default" namespace="/">
 		
-		<action name="comptage" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="compter">
-			<result >/WEB-INF/jsp/comptage.jsp</result>
-			<result name="error">/WEB-INF/jsp/error.jsp</result>
+		<action name="saisie">
+			<result >/WEB-INF/jsp/saisie.jsp</result>
+		</action>
+		
+		<action name="rechercher" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="rechercher">
+			<result>/WEB-INF/jsp/resultat.jsp</result>
 		</action>
 		
 	</package>

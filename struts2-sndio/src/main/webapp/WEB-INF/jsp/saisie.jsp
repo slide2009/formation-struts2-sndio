@@ -9,7 +9,10 @@
 
 <body>
 	<div>
-		Nombre total : <s:property value="nombreTotal"/>
+		<s:form action="rechercher">
+			<s:textfield name="nom" label="Nom de la personne "></s:textfield>
+			<s:submit value="Rechecher"></s:submit>
+		</s:form>
 	</div>
 </body>
 </html>

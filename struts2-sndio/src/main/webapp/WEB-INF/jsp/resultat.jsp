@@ -9,7 +9,7 @@
 
 <body>
 	<div>
-		Erreur
+		<s:property value="message"/>
 	</div>
 </body>
 </html>
