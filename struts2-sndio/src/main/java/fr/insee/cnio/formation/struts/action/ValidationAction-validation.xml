@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+ 
+<validators>
+	<validator type="requiredstring">
+		<param name="fieldname">personne.nom</param>
+		<message>Le nom ne doit pas être vide</message>
+	 </validator>
+	 <validator type="int">
+		<param name="fieldname">personne.age</param>
+		<param name="min">18</param>
+		<message>L'âge doit être > 18</message>
+	 </validator>
+	<validator type="expression">
+      <param name="expression"><![CDATA[(personne.sexe.equals("F") 
+      		|| personne.sexe.equals("H") && personne.age gt 22)]]>
+      </param>
+      <message>Si le sexe est H alors l'âge doit être strictement supérieur à 22</message>
+	</validator>
+</validators>
