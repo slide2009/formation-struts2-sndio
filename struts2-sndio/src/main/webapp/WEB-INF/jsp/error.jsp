@@ -9,7 +9,7 @@
 
 <body>
 	<div>
-		Aujourd'hui : <s:property value="date"/>
+		Erreur
 	</div>
 </body>
 </html>
