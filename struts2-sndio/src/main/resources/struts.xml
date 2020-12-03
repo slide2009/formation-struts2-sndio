@@ -6,10 +6,15 @@
 
 	<package name="default" extends="struts-default" namespace="/">
 		
-		<action name="index" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="afficher">
-			<result name="success" type="dispatcher">/WEB-INF/jsp/date.jsp</result>
+		<result-types>
+      		<result-type name="json" class="org.apache.struts2.json.JSONResult"/>
+		</result-types>
+			
+		<action name="personnes" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="lister">
+			<result name="none" type="json">
+				<param name="includeProperties">listePersonnes.*</param>
+			</result>
 		</action>
-		
 	</package>
 
 </struts>
