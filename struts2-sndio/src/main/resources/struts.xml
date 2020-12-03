@@ -10,8 +10,12 @@
 			<result >/WEB-INF/jsp/saisie.jsp</result>
 		</action>
 		
+		<action name="enregistrer" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="enregistrer">
+			<result>/WEB-INF/jsp/liste.jsp</result>
+		</action>
+		
 		<action name="rechercher" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="rechercher">
-			<result>/WEB-INF/jsp/resultat.jsp</result>
+			<result>/WEB-INF/jsp/listeAgees.jsp</result>
 		</action>
 		
 	</package>

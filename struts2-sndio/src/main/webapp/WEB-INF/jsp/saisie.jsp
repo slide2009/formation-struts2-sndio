@@ -9,9 +9,11 @@
 
 <body>
 	<div>
-		<s:form action="rechercher">
-			<s:textfield name="nom" label="Nom de la personne "></s:textfield>
-			<s:submit value="Rechecher"></s:submit>
+		<s:form action="enregistrer">
+			<s:textfield name="personneChoisie.nom" label="Nom de la personne "></s:textfield>
+			<s:textfield name="personneChoisie.age" label="Age "></s:textfield>			
+			<s:select name="personneChoisie.sexe" label="Indiquez le sexe " list="{'H', 'F'}"></s:select>		
+			<s:submit value="Enregistrer"></s:submit>
 		</s:form>
 	</div>
 </body>

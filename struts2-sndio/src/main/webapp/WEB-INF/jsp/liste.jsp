@@ -8,8 +8,15 @@
 </head>
 
 <body>
+	<s:iterator value="listePersonnes">
 	<div>
-		<s:property value="message"/>
+			<s:property value="nom"/> - <s:if test='"H".equals(sexe) ' > Homme</s:if> <s:else>Femme</s:else>
+			<a href="rechercher?ageChoisi=<s:property value="age"/>"> Voir les personnes plus âgées</a>
+	</div>		
+	
+	</s:iterator>
+	<div>
+		
 	</div>
 </body>
 </html>
