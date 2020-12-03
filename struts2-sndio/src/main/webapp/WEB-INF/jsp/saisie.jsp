@@ -7,7 +7,7 @@
 </head>
 <body>
 	<s:form action="rechercher">
-		<s:textfield name="nom" label="Indiquez un nom "></s:textfield>		
+		<s:textfield name="nom" label="Nom de la personne "></s:textfield>		
 		<s:submit value="Rechercher"></s:submit>
 	</s:form>
 </body>
