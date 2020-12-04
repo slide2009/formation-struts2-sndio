@@ -8,7 +8,7 @@
 <body>
 	
 	Formulaire prérempli :
-	<s:form action="tpSaisieFormulaireSubmit">
+	<s:form action="sessionSubmit">
 		<s:textfield name="personne.nom" value="%{personneParDefaut.nom}" label="Nom"></s:textfield>
 		<s:textfield name="personne.sexe" value="%{personneParDefaut.sexe}" label="Sexe"></s:textfield>
 		<s:textfield name="personne.age" value="%{personneParDefaut.age}" label="Age"></s:textfield>

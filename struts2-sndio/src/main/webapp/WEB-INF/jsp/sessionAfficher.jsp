@@ -8,8 +8,9 @@
 <body>
 	Démos SessionAware : choisissez une personne préférée
 	<s:form action="sessionSubmit">
-		<s:select list="listePersonnes" listKey="nom" listValue="nom +' - '+ age + ' ans'" 
- 				name="nomChoisi"/>
+		<s:select list="listePersonnes" listKey="nom" 
+					    listValue="nom +' - '+ age + ' ans'" 
+ 				        name="nomChoisi"/>
 		<s:submit value="Valider cette personne"></s:submit>
 	</s:form>
 </body>

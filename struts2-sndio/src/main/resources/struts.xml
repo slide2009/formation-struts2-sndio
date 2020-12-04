@@ -14,7 +14,7 @@
 			<result>/WEB-INF/jsp/sessionSauvegardee.jsp</result>
 		</action>
 		
-		<action name="sessionFormulairePrerempli" class="fr.insee.cnio.formation.struts.action.SessionAction" method="preremplirFormulaire">
+		<action name="sessionFormulairePrerempli" class="fr.insee.cnio.formation.struts.action.FormulairePrerempliAction" method="preremplirFormulaire">
 			<result>/WEB-INF/jsp/sessionFormPrerempli.jsp</result>
 		</action>
 
