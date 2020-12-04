@@ -10,11 +10,16 @@
       		<result-type name="json" class="org.apache.struts2.json.JSONResult"/>
 		</result-types>
 			
-		<action name="personnes" class="fr.insee.cnio.formation.struts.action.AffichageAction" method="lister">
+		<action name="personnes" class="fr.insee.cnio.formation.struts.action.JsonAction" method="lister">
+			<result>/WEB-INF/jsp/personnes.jsp</result>
+		</action>
+		
+		<action name="personne" class="fr.insee.cnio.formation.struts.action.JsonAction" method="afficherDetail">
 			<result name="none" type="json">
-				<param name="includeProperties">listePersonnes.*</param>
+				<param name="includeProperties">personne.*</param>
 			</result>
 		</action>
+		
 	</package>
 
 </struts>
