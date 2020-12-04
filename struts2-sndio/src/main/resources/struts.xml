@@ -16,7 +16,8 @@
 				
 		<action name="personne" class="fr.insee.cnio.formation.struts.action.JsonAction" method="chercher">
 				<result name="none" type="json">
-					<param name="ignoreHierarchy">true</param>
+					<param name="enableGZIP">true</param>
+					<param name="excludeProperties">personne.taille</param>
 					<param name="includeProperties">personne.*</param>
 				</result>
 		</action>

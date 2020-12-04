@@ -1,7 +1,7 @@
 package fr.insee.cnio.formation.struts.modele;
 
 
-public class Personne {
+public class Personne extends Alien {
 	
 	private String nom;
 	private String sexe;
