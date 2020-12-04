@@ -10,7 +10,7 @@ public class ValidationAction extends ActionSupport {
 
 	private Personne personne;
 
-	public String enegistrer() {
+	public String enregistrer() {
 		return SUCCESS;
 	}
 	

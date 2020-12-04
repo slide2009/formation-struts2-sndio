@@ -11,7 +11,7 @@
 		</action>
 		
 		<action name="enregistrer" class="fr.insee.cnio.formation.struts.action.ValidationAction"
-			method="enegistrer">
+			method="enregistrer">
 			<result name="input">/WEB-INF/jsp/saisie.jsp</result>
 			<result name="success">/WEB-INF/jsp/resultat.jsp</result>			
 		</action>
