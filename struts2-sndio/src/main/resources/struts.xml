@@ -5,18 +5,16 @@
 <struts>
 
 	<package name="default" extends="struts-default" namespace="/">
+	
 		<action name="sessionAfficher" class="fr.insee.cnio.formation.struts.action.SessionAction" method="afficher">
 			<result>/WEB-INF/jsp/sessionAfficher.jsp</result>
 		</action>
-		<action name="sessionSubmit"
-			class="fr.insee.cnio.formation.struts.action.SessionAction"
-			method="miseEnSession">
+		
+		<action name="sessionSubmit" class="fr.insee.cnio.formation.struts.action.SessionAction" method="miseEnSession">
 			<result>/WEB-INF/jsp/sessionSauvegardee.jsp</result>
 		</action>
 		
-		<action name="sessionFormulairePrerempli"
-			class="fr.insee.cnio.formation.struts.action.SessionAction"
-			method="preremplirFormulaire">
+		<action name="sessionFormulairePrerempli" class="fr.insee.cnio.formation.struts.action.SessionAction" method="preremplirFormulaire">
 			<result>/WEB-INF/jsp/sessionFormPrerempli.jsp</result>
 		</action>
 
