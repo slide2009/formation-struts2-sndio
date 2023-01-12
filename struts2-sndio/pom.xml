@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.insee.cnio.formation</groupId>
 	<artifactId>struts2-sndio</artifactId>
-	<version>1.0</version>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 	
 	<properties>
@@ -12,18 +12,10 @@
 	
 	<dependencies>
 		<dependency>
-		    <groupId>javax.servlet</groupId>
-		    <artifactId>javax.servlet-api</artifactId>
-		    <version>4.0.1</version>
-		    <scope>provided</scope>
-		</dependency>
-
-		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
 			<version>6.1.1</version>
-		</dependency>
-		
+		</dependency>		
 	</dependencies>
 	<build>
 		<plugins>
