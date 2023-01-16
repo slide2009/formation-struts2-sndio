@@ -23,6 +23,46 @@
 		</action>
 				
 		
+		<action name="recherche-formulaire">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/recherche-formulaire.jsp</result>
+		</action>
+		
+		<action name="url-recherche" class="fr.insee.cnio.formation.struts.action.RecherchePersonneAction" method="rechercher">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/resultat-recherche.jsp</result>
+		</action>
+		
+		<action name="personnes" class="fr.insee.cnio.formation.struts.action.DemoAction" method="lister">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/liste-personnes.jsp</result>
+		</action>
+		<action name="choisir-personne" class="fr.insee.cnio.formation.struts.action.DemoAction" method="choisirPersonne">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/liste-personnes.jsp</result>
+		</action>
+		
+		<action name="afficher-date" class="fr.insee.cnio.formation.struts.action.SessionAction" method="afficher">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/date.jsp</result>
+		</action>
+		
+		<action name="afficher-date-session" class="fr.insee.cnio.formation.struts.action.SessionAction" method="afficherSession">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/date-session.jsp</result>
+		</action>
+		
+		<action name="liste-personnes" class="fr.insee.cnio.formation.struts.action.DemoSession" method="remplirListePersonnes">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/liste-personnes-session.jsp</result>
+		</action>
+		
+		<action name="mettre-en-session" class="fr.insee.cnio.formation.struts.action.DemoSession" method="mettreEnSession">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/resultat-recherche.jsp</result>
+		</action>
+		
+		<action name="formulaire-prerempli" class="fr.insee.cnio.formation.struts.action.DemoSession" method="preRemplirFormulaire">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/recherche-session-formulaire.jsp</result>
+		</action>
+		
+		
+		
+		
+		
+		
 	</package>
 
 </struts>

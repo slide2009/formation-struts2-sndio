@@ -2,6 +2,7 @@ package fr.insee.cnio.formation.struts.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import fr.insee.cnio.formation.struts.modele.Personne;
 
@@ -59,5 +60,10 @@ public class PersonneService {
 			}
 		}
 		return personneTrouvee;
+	}
+	
+	public Optional<Personne> chercherPersonne(String nom) {
+		return listePersonnes.stream().filter(personne -> personne.getNom().equalsIgnoreCase(nom))
+		.findFirst();
 	}
 }
